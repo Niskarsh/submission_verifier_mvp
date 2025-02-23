@@ -11,6 +11,7 @@ const TaskSchema = z.object({
   id: z.string(),
   title: z.string(),
   taskDescription: z.string(),
+  taskActionables: z.array(z.string())
 });
 const TasksSchema = z.object({
   tasks: z.array(TaskSchema)
@@ -46,7 +47,9 @@ Skillsets selected: ${selectedSkillsets.join(', ')}
     return tasksArray
       .map(
         (task, index) =>
-          `${index + 1}. **${task.title}**\n${task.taskDescription}`
+          `\n${index + 1}. **${task.title}**\n${task.taskDescription}\n**Actionables:**\n${task.taskActionables
+            .map((actionable, idx) => `   ${idx + 1}. ${actionable}`)
+            .join('\n')}`
       )
       .join('\n\n');
   };
