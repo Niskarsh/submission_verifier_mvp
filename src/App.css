@@ -1,0 +1,123 @@
+/* App.css */
+
+/* Global dark theme styling */
+body, html, .App {
+  margin: 0;
+  padding: 0;
+  background-color: #111;  
+  color: #eee;             
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  min-height: 100vh;
+}
+
+/* App container */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Collapsible section styling */
+.collapsible-section {
+  width: 80%;
+  /* max-width: 800px; */
+  background-color: #1b1b1b;
+  border: 2px solid #333;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.collapsible-header {
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapsible-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #eee;
+}
+
+.section-status {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-left: 10px;
+}
+
+.collapse-icon {
+  font-size: 1.2rem;
+}
+
+.collapsible-content {
+  padding: 20px;
+  background-color: #141414;
+}
+
+/* Figma input styling (if needed) */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background-color: #2a2a2a;
+  color: #eee;
+}
+
+/* Basic button styling */
+button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover:enabled {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #444;
+  cursor: not-allowed;
+}
+
+/* Skillset selection specific styling */
+.skillsets-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.skillset-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skillset-item {
+  background-color: #2a2a2a;
+  color: #eee;
+  border: 1px solid #444;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.skillset-item:hover {
+  background-color: #333;
+}
+
+.selected-indicator {
+  margin-left: 8px;
+  color: #0f0;
+}

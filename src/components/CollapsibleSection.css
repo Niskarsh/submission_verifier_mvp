@@ -1,0 +1,52 @@
+/* CollapsibleSection.css */
+
+/* Container for each collapsible panel */
+.collapsible-section {
+    margin-bottom: 20px;
+    background-color: #1b1b1b;
+    border: 2px solid #333;
+    border-radius: 8px;
+    overflow: hidden; /* Ensures rounded corners look neat when content is hidden */
+  }
+  
+  /* Header for the panel; clickable to toggle collapse */
+  .collapsible-header {
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1b1b1b;
+  }
+  
+  /* Header title styling */
+  .collapsible-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #eee;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Status indicator text */
+  .section-status {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-left: 10px;
+  }
+  
+  /* Collapse/expand icon */
+  .collapse-icon {
+    font-size: 1.2rem;
+    margin-left: auto;
+    color: #ccc;
+  }
+  
+  /* Content area inside the panel when expanded */
+  .collapsible-content {
+    padding: 20px;
+    background-color: #141414;
+    color: #eee;
+  }
+  
